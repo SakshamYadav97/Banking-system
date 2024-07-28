@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form styles */
+form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Centering the form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login form container */
+.login-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login form styles */
+.login-form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Dashboard styles */
+.dashboard {
+  padding: 10px;
+}
+
+.dashboard h1 {
+  margin-bottom: 8px;
+}
+
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-right {
+  flex: 2;
+}
+
+.account-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.account-item {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: small;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar button:hover,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styles for better aesthetics */
+h1, h2 {
+  color: #333;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+.dashboard .filter-form input {
+  margin-bottom: 10px;
+  /* width: 100%; */
+  padding: 8px;
+  margin: 0px 4px;
+}
+
+.dashboard .filter-form h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dashboard-left, .dashboard-right {
+    width: 100%;
   }
 }

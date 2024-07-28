@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": "3d68",
+      "firstName": "anshuman",
+      "lastName": "pandey",
+      "email": "anshuman@gmail.com",
+      "password": "$2a$10$P2l8Ez9c4f6niP8AOZzVz.nIS.8oqxmQxdlmo2YD80HLT2EoUPnn2",
+      "isAdmin": false
+    },
+    {
+      "id": "447c",
+      "firstName": "admin",
+      "lastName": "new",
+      "email": "admin@gmail.com",
+      "password": "$2a$10$/HzyLly2Sxz..ndMmi28kOPPrE1tXiQ3TIR3dYVV.pFiXgxiocCoa",
+      "isAdmin": true
+    },
+    {
+      "id": "f86d",
+      "firstName": "saksham",
+      "lastName": "yaav",
+      "email": "saksham@gmail.com",
+      "password": "$2a$10$xBtTUwlcGPBSZ/KX.UtyouwcJYFuKjppBSNLxyg/YFwL/MdSecflm",
+      "isAdmin": false
+    },
+    {
+      "id": "ddbe",
+      "firstName": "pawan",
+      "lastName": "yadav",
+      "email": "pawan@gmail.com",
+      "password": "$2a$10$22BB24Qok5JtxW6RreNz6.OGXNMTNpooELAeEW5Awi2AB2RIVSl06",
+      "isAdmin": false
+    }
+  ],
+  "accounts": [
+    {
+      "id": "e0ff",
+      "firstName": "saksham",
+      "lastName": "yadav",
+      "dateOfBirth": "2024-07-11",
+      "address": "triveni nagar",
+      "currency": "USD",
+      "userEmail": "saksham@gmail.com",
+      "userId": "f86d",
+      "accountNumber": "ACC-347952",
+      "balance": 9950
+    },
+    {
+      "id": "5fdf",
+      "firstName": "pawan",
+      "lastName": "yadav",
+      "dateOfBirth": "2024-07-02",
+      "address": "triveni nagar",
+      "currency": "USD",
+      "userEmail": "pawan@gmail.com",
+      "userId": "ddbe",
+      "accountNumber": "ACC-557032",
+      "balance": 10050
+    },
+    {
+      "id": "2788",
+      "firstName": "anshuman",
+      "lastName": "pandey",
+      "dateOfBirth": "2024-07-11",
+      "address": "vikas nagar",
+      "currency": "USD",
+      "userEmail": "anshuman@gmail.com",
+      "userId": "3d68",
+      "accountNumber": "ACC-989751",
+      "balance": 10000
+    }
+  ],
+  "transactions": [
+    {
+      "id": "58f7",
+      "accountId": "e0ff",
+      "timestamp": "2024-07-28T14:39:46.939Z",
+      "description": "Transfer to ACC-557032",
+      "amount": -50
+    },
+    {
+      "id": "2f15",
+      "accountId": "5fdf",
+      "timestamp": "2024-07-28T14:39:46.944Z",
+      "description": "Transfer from ACC-347952",
+      "amount": 50
+    }
+  ]
+}
